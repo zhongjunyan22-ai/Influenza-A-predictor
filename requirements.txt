@@ -1,8 +1,18 @@
-streamlit==1.37.0
-joblib==1.4.2
+# 1. 先锁定底层编译/数学库（解决卡死的关键）
 numpy==1.26.4
-pandas==2.2.2
-matplotlib==3.8.0
+scipy==1.13.1
+numba==0.60.0
+scikit-image==0.23.2
+
+# 2. 再锁定核心机器学习与可视化
 scikit-learn==1.5.1
+matplotlib==3.8.0
+pandas==2.2.2
+joblib==1.4.2
+
+# 3. 锁定应用框架
+streamlit==1.37.0
+
+# 4. 最后锁定解释性模型（此时 pip 不用再去猜依赖了）
 lime==0.2.0.1
 shap==0.45.1
