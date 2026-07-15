@@ -46,7 +46,7 @@ feature_names = [
     "MCV",     # 
     "MCH",   #  
     "MCHC",     #  
-    "RDW-CV",        #  
+    "RDW_CV",        #  
     "PLT",        # 
     "PCT",       # 
     "MPV",   # 
