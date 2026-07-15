@@ -58,7 +58,7 @@ feature_names = [
 st.title("Influenza A predictor")  # 设置网页标题
 
 # 性别：分类选择框（0：女性，1：男性）
-Gender = st.selectbox("性别:", options=[0, 1], format_func=lambda x: "男" if x == 1 else "女")  
+Gender = st.selectbox("Gender:", options=[0, 1], format_func=lambda x: "male" if x == 1 else "female")  
 
 # 数值型变量输入框
 Age = st.number_input("Age:", min_value=0.00, max_value=120.00, value=8.00, step=0.01)
