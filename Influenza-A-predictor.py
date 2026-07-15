@@ -61,7 +61,7 @@ st.title("Influenza A predictor")  # 设置网页标题
 Gender = st.selectbox("性别:", options=[0, 1], format_func=lambda x: "男" if x == 1 else "女")  
 
 # 数值型变量输入框
-age = st.number_input("年龄:", min_value=0.00, max_value=120.00, value=8.00, step=0.01)
+Age = st.number_input("年龄:", min_value=0.00, max_value=120.00, value=8.00, step=0.01)
 WBC = st.number_input("白细胞计数:", min_value=0.00, max_value=200.00, value=5.69, step=0.01) 
 PNEUT = st.number_input("中性粒细胞百分比:", min_value=0.00, max_value=100.00, value=68.20, step=0.01) 
 PLYMPH = st.number_input("淋巴细胞百分比:", min_value=0.00, max_value=100.00, value=20.91, step=0.01) 
