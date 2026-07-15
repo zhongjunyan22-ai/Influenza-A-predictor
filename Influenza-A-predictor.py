@@ -79,7 +79,7 @@ HCT = st.number_input("红细胞压积:", min_value=0, max_value=70, value=40)
 MCV = st.number_input("红细胞平均体积:", min_value=0, max_value=100, value=84) 
 MCH = st.number_input("平均红细胞血红蛋白含量:", min_value=0, max_value=70, value=27) 
 MCHC = st.number_input("平均红细胞血红蛋白浓度:", min_value=0, max_value=500, value=328) 
-RDW-CV = st.number_input("红细胞变异系数:", min_value=0, max_value=30, value=13) 
+RDW_CV = st.number_input("红细胞变异系数:", min_value=0, max_value=30, value=13) 
 PLT = st.number_input("血小板计数:", min_value=0, max_value=900, value=330) 
 PCT = st.number_input("血小板压积:", min_value=0, max_value=10, value=0.30) 
 MPV = st.number_input("血小板平均体积:", min_value=0, max_value=30, value=9.30) 
@@ -87,7 +87,7 @@ PDW = st.number_input("血小板分布宽度:", min_value=0, max_value=100, valu
 hs_CRP = st.number_input("超敏C反应蛋白:", min_value=0, max_value=900, value=0.36) 
 
 # 处理输入数据并进行预测
-feature_values = [Gender, Age, WBC, PNEUT, PLYMPH, PEOS, PBASO, PMONO, NEUT, LYMPH, EOS, BASO, MONO, RBC, HB, HCT, MCV, MCH, MCHC, RDW-CV, PLT, PCT, MPV, PDW, hs_CRP]  # 将用户输入的特征值存入列表
+feature_values = [Gender, Age, WBC, PNEUT, PLYMPH, PEOS, PBASO, PMONO, NEUT, LYMPH, EOS, BASO, MONO, RBC, HB, HCT, MCV, MCH, MCHC, RDW_CV, PLT, PCT, MPV, PDW, hs_CRP]  # 将用户输入的特征值存入列表
 features = np.array([feature_values])  # 将特征转换为 NumPy 数组，适用于模型输入
 
 # 当用户点击 "Predict" 按钮时执行以下代码
