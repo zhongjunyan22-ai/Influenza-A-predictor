@@ -81,7 +81,7 @@ MCH = st.number_input("平均红细胞血红蛋白含量:", min_value=0.00, max_
 MCHC = st.number_input("平均红细胞血红蛋白浓度:", min_value=0.00, max_value=500.00, value=328.00, step=0.01) 
 RDW_CV = st.number_input("红细胞变异系数:", min_value=0.00, max_value=30.00, value=13.00, step=0.01) 
 PLT = st.number_input("血小板计数:", min_value=0.00, max_value=900.00, value=330.00, step=0.01) 
-PCT = st.number_input("血小板压积:", min_value=0.00, max_value=10.00, value=0.30), step=0.01 
+PCT = st.number_input("血小板压积:", min_value=0.00, max_value=10.00, value=0.30, step=0.01 )
 MPV = st.number_input("血小板平均体积:", min_value=0.00, max_value=30.00, value=9.30, step=0.01) 
 PDW = st.number_input("血小板分布宽度:", min_value=0.00, max_value=100.00, value=16.40, step=0.01) 
 hs_CRP = st.number_input("超敏C反应蛋白:", min_value=0.00, max_value=900.00, value=0.36, step=0.01) 
